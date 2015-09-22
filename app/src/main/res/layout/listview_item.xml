@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iyari.contactos.util.ChecableRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imagViewRes"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:focusable="false"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/avatar"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/imagViewRes"
+        android:layout_toLeftOf="@+id/checkbox"
+        >
+
+    <TextView
+        android:id="@+id/texViewNom"
+        android:text="Nombre"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:focusable="false"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/textViewTel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="telefono"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:focusable="false"/>
+
+    <TextView
+        android:id="@+id/textViewCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="correo"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:focusable="false"/>
+
+    <TextView
+        android:id="@+id/textViewDirecc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="direccion"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:focusable="false"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/checkbox"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/imagViewRes"
+        android:clickable="false"
+        android:focusable="false"
+        />
+</com.iyari.contactos.util.ChecableRelativeLayout>
